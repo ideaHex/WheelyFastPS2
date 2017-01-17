@@ -145,7 +145,7 @@ int translateStick(int value, int newRange){
   return newValue;
 }
 void processData(){
-    int range = 100;
+    int range = 500;
     if (ps2x.Button(PSB_L2))range = 500; // slow drive mode
     int dY = translateStick(ps2x.Analog(PSS_LY) , range);
     if (ps2x.Button(PSB_R2))range = 500; // slow steering mode
