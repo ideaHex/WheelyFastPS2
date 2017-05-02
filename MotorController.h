@@ -34,11 +34,11 @@ class motorController {
   //uint8_t mPB2;
   uint8_t PWMA;
   uint8_t PWMB;
-  int MAX_range = 500;
+  int MAX_range = 500;  // Input range from PS2 controller
   bool useEnablePins;
   float trimA = 1.0;
   float trimB = 1.0;
-  float steeringSensitivity = 0.15;
+  float steeringSensitivity = 1.0;
   bool reverseMotorADirection = false;
   bool reverseMotorBDirection = false;
   int PWMFrequency = 1000; //Theoretical max frequency is 80000000/range, range = 1023 so 78Khz here
